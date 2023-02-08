@@ -8,5 +8,9 @@
 .title{
     text-align: center;
     color: white;
-    font-family: "Roboto";
+    font-family: "Lato";
+    
+}
+h1{
+    text-shadow: 5px 15px 20px 2px #333;
 }

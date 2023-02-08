@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  background-color: #dbdbdb;
+  background-color: #e1e4f5;
   overflow: hidden;
   box-shadow: 2px  2px 20px 2px #222222;
 }
@@ -18,7 +18,7 @@
   margin: 0px;
   height:100%;
   padding:0px;
-  background-image: url('heroImage3.jpg');
+  background-image: url('heroImage4.jpg');
   background-size:cover;
   background-position: center;
   width:45%;
@@ -27,7 +27,7 @@
 .weatherSide{
   width: 55%;
   height:100%;
-  background-color: #dbdbdb;
+  background-color: #e1e4f5;
 }
 .weatherSide h1{
   display: block;
@@ -37,4 +37,5 @@
   right:39%;
   font-size:48px;
   color:#333;
+  
 }
