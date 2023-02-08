@@ -1,0 +1,16 @@
+.weather{
+    width: 75%;
+    border-radius: 6px;
+    box-shadow: 2px 5px 10px rgba(0,0,0,30%);
+    color: #333;
+    background-color: #fffbfb;
+    padding:20px;
+    margin-top:15%;
+    margin-left:3%;
+}
+.top{
+    padding-left: 3%;
+}
+img{
+    padding-left:3%;
+}

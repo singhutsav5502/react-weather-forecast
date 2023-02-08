@@ -1,0 +1,12 @@
+.search-container{
+    width:55%;
+    padding-left: 20%;
+    padding-top:50%;
+    height:100vh;
+    
+}
+.title{
+    text-align: center;
+    color: white;
+    font-family: "Roboto";
+}

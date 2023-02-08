@@ -1,4 +1,40 @@
-.container { 
-  max-width:1080px;
-  margin :20px auto;
+
+.container {
+  margin: auto;
+  margin:5% auto 10px auto;
+  width: 75%;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #dbdbdb;
+  overflow: hidden;
+  box-shadow: 2px  2px 20px 2px #222222;
+}
+
+.search {
+  margin: 0px;
+  height:100%;
+  padding:0px;
+  background-image: url('heroImage3.jpg');
+  background-size:cover;
+  background-position: center;
+  width:45%;
+  border-radius: 15px;
+}
+.weatherSide{
+  width: 55%;
+  height:100%;
+  background-color: #dbdbdb;
+}
+.weatherSide h1{
+  display: block;
+  text-align: center;
+  position: relative;
+  top:10%;
+  right:39%;
+  font-size:48px;
+  color:#333;
 }

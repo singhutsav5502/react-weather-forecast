@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AsyncPaginate } from "react-select-async-paginate";
 import { GEO_API_URL, geoApiOtions } from '../../api.js';
+import "./Search.css"
 const Search = (props) => {
     const [search, setSearch] = useState(null);
     const onChangeHandler = (searchData) => {
@@ -13,22 +14,26 @@ const Search = (props) => {
             .then(response => {
                 return {
                     options: response.data.map((city) => {
-                        return{
-                                value: `${city.latitude} ${city.longitude}`,
-                                label: `${city.name}, ${city.countryCode}`,
-                            }
-                        
+                        return {
+                            value: `${city.latitude} ${city.longitude}`,
+                            label: `${city.name}, ${city.countryCode}`,
+                        }
+
                     })
                 }
             })
             .catch(err => console.error(err));
     };
-    return (<AsyncPaginate
-        placeholder="Search for city"
-        debounceTimeout={600}
-        value={search}
-        onChange={onChangeHandler}
-        loadOptions={loadOptions}
-    />)
+    return (
+        <div className='search-container'>
+            <h1 className= 'title'>Weather Forecast</h1>
+            <AsyncPaginate className="search-bar"
+                placeholder="Search for city"
+                debounceTimeout={600}
+                value={search}
+                onChange={onChangeHandler}
+                loadOptions={loadOptions}
+            />
+        </div>)
 }
 export default Search;
