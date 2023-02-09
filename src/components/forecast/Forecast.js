@@ -9,7 +9,8 @@ const Forecast = ({ data }) => {
     return (<>
         <label className="forecast-title">Daily </label>
         <Accordion allowZeroExpanded>
-            {data.list.splice(0, 3).map((item, idx) => (
+            {data.list.splice(0, 5).map((item, idx) => (
+                // div instead of accordion
                 <AccordionItem key={idx}>
                     <AccordionItemHeading>
                         <AccordionItemButton>
