@@ -8,7 +8,7 @@
     display: block;
     font-size: 23px;
     font-weight: 700;
-    color: #212121;
+    color: #28398e;;
     margin-top: 10px;
     position: relative;
     left: 3%;
@@ -28,13 +28,16 @@
     opacity: 0.75;
     transform: scale(0.99);
     transition: 0.2s all ease-in-out;
+    
 }
 
 .daily-item:hover {
     opacity: 1;
     transform: scale(1);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color:#FFCC70;
 }
-
 .icon-small {
     width: 40px;
     height: auto;

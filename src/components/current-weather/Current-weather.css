@@ -3,12 +3,14 @@
     width: 90%;
     border-radius: 6px;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.236);
-    color: #212121;
-    background-color: #f9f9f9;
     padding:5px;
     margin-top:15%;
     margin-left:3%;
     display:flex;
+    transition: 5s all ease-in-out;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color:#FFCC70;
 }
 .city{
     font-weight: 300;
@@ -53,7 +55,7 @@ img{
 .temperature{
     font-weight: 800;
     font-size:48px;
-    color:#8d2222;
+    color:#FFCC70;
 }
 .parameter-row{
     margin:5px;
@@ -63,4 +65,7 @@ img{
 }
 .details{
     padding-top: 50px;
+}
+.description-container{
+    color:#FFCC70;
 }
