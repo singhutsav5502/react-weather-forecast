@@ -7,5 +7,5 @@ Make sure to let page load completely before searching and selecting location.
 Proper Weather data and forecast is shown based on the location selected (Try clicking on the forecast!).
 
 ## APIs USED:
-####### GeoDB Cities
-####### OpenWeatherMap
+###### GeoDB Cities
+###### OpenWeatherMap
