@@ -9,7 +9,7 @@ const CurrentWeatherDummy = () => {
                     <div className='description-container'>
                         <img alt="weather" className="weather-icon" src="icons/01d.png" />
                         <p className="description">Description</p>
-                        <p className="city">Select Location  </p>
+                        <p className="city">Select City  </p>
                     </div>
                 </div>
                 <div className="right">
