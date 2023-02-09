@@ -7,9 +7,10 @@
 }
 .title{
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px  #232323;
     font-family: "Lato";
-    
+    font-weight: bold;
 }
 h1{
     text-shadow: 5px 15px 20px 2px #333;

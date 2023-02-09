@@ -34,7 +34,7 @@ function App() {
       <div className="weatherSide">
         <h1>Today</h1>
         {currentWeather?<CurrentWeather data = {currentWeather}/>:<CurrentWeatherDummy/>}
-        {/* <Forecast /> */}
+        {forecast && <Forecast data ={forecast}/>}
       </div>
     </div>
   );
