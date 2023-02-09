@@ -3,6 +3,7 @@ import './App.css';
 import Search from './components/search/Search';
 import CurrentWeather from './components/current-weather/Current-wearther';
 import CurrentWeatherDummy from './components/current-weather/Current-wearther-dummy';
+import Forecast from './components/forecast/Forecast.js';
 import { WEATHER_API_KEY,WEATHER_API_URL } from './api';
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -33,6 +34,7 @@ function App() {
       <div className="weatherSide">
         <h1>Today</h1>
         {currentWeather?<CurrentWeather data = {currentWeather}/>:<CurrentWeatherDummy/>}
+        {/* <Forecast /> */}
       </div>
     </div>
   );

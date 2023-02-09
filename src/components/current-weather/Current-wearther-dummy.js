@@ -5,11 +5,11 @@ const CurrentWeatherDummy = () => {
         <div className="weather-container">
             <div className="weather">
                 <div className="left">
-                    <p className="temperature">  Temperature  </p>
+                    <p className="temperature">  Description</p>
                     <div className='description-container'>
-                        <img alt="weather" className="weather-icon" src="icons/01d.png" />
+                        <img alt="weather" className="weather-icon" src={process.env.PUBLIC_URL + "/icons/01d.png"} />
                         <p className="description">Description</p>
-                        <p className="city">Select City  </p>
+                        <p className="city">Select Location  </p>
                     </div>
                 </div>
                 <div className="right">
