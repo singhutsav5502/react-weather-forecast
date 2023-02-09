@@ -1,8 +1,9 @@
-.forecast-container{
-    margin-left:2%;
-    width:93%;
-    
+.forecast-container {
+    margin-left: 2%;
+    width: 93%;
+
 }
+
 .forecast-title {
     display: block;
     font-size: 23px;
@@ -24,12 +25,13 @@
     font-size: 14px;
     padding: 5px 20px;
     box-shadow: 2px 2px 5px #33333367;
-    opacity:0.75;
+    opacity: 0.75;
     transform: scale(0.99);
-    transition:0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
 }
-.daily-item:hover{
-    opacity:1;
+
+.daily-item:hover {
+    opacity: 1;
     transform: scale(1);
 }
 
@@ -50,6 +52,33 @@
     margin-right: 15px;
     text-align: right;
 }
-.min-max{
-    color:#757575;
+
+.min-max {
+    color: #757575;
+}
+
+.daily-details-grid {
+    grid-row-gap: 0;
+    grid-column-gap: 15px;
+    row-gap: 0px;
+    column-gap: 15px;
+    display: grid;
+    flex: 1 1;
+    grid-template-columns: auto auto;
+    padding:5px 15px;
+}
+.daily-details-grid-item{
+    align-items: center;
+    display: flex;
+    height: 30px;
+    justify-content: space-evenly;
+    border-right: 1px solid #3333331b;
+    border-left: 1px solid #3333331b;
+    width:95%;
+}
+.daily-details-grid-desc{
+    color:#333333bf;
+}
+.daily-details-grid-value{
+    color:#333333f4;
 }
