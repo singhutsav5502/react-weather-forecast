@@ -5,7 +5,7 @@ const CurrentWeather = ({ data }) => {
         <div className="weather-container">
             <div className="weather">
                 <div className="left">
-                    <p className="temperature"> {data.main.temp}°C</p>
+                    <p className="temperature"> {Math.round(data.main.temp)}°C</p>
                     <div className='description-container'>
                         <img alt="weather" className="weather-icon" src={process.env.PUBLIC_URL + `/icons/${data.weather[0].icon}.png`} />
                         <p className="description">{data.weather[0].description}</p>
