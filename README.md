@@ -1,2 +1,11 @@
 # City Weather Forecast
-make sure to search for city name with population of over one million people to receive proper weather data.
+Cities with population of over one million people have auto fill options.
+
+
+Make sure to let page load completely before searching and selecting location.
+
+Proper Weather data and forecast is shown based on the location selected (Try clicking on the forecast!).
+
+## APIs USED:
+####### GeoDB Cities
+####### OpenWeatherMap
