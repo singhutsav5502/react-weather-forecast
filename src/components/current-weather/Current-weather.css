@@ -15,11 +15,11 @@
 .city{
     font-weight: 300;
     line-height: 1;
-    font-size: 18px;
+    font-size: 1vh;
 }
 .left p{
     display: block;
-    margin: 5px;
+    margin: 0.2vh;
     font-family: "Lato";
 }
 .description{
@@ -32,7 +32,7 @@
     width: 60%;
 }
 .description-container{
-    font-size: 36px;
+    font-size:2vh;
     display: flex;
     flex-direction:column;
     align-items: flex-start;
@@ -50,11 +50,11 @@ img{
     color:#3333335a;
 }
 .right-items{
-    padding:5px;
+    padding:0.2vh;
 }
 .temperature{
     font-weight: 800;
-    font-size:48px;
+    font-size:2.5vh;
     color:#FFCC70;
 }
 .parameter-row{
@@ -64,7 +64,8 @@ img{
     font-weight:400;
 }
 .details{
-    padding-top: 50px;
+    padding-top: 1vh;
+    font-size:0.5vh;
 }
 .description-container{
     color:#FFCC70;
