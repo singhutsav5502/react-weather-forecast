@@ -59,9 +59,6 @@
     text-align: right;
 }
 
-.min-max {
-    color: #757575;
-}
 
 .daily-details-grid {
     grid-row-gap: 0;
@@ -72,14 +69,14 @@
     flex: 1 1;
     grid-template-columns: auto auto;
     padding:5px 15px;
-    font-size:1.35vh;
+    font-size:0.35vh;
 
 
 }
 .daily-details-grid-item{
     align-items: center;
     display: flex;
-    height: 30px;
+    height: 2.4vh;
     justify-content: space-evenly;
     border-right: 1px solid #3333331b;
     border-left: 1px solid #3333331b;
@@ -87,7 +84,12 @@
 }
 .daily-details-grid-desc{
     color:#333333bf;
+
 }
 .daily-details-grid-value{
     color:#333333f4;
+}
+
+.min-max {
+    color: #757575;
 }

@@ -1,0 +1,75 @@
+
+.hourWeather{
+    width:100%;
+    border-radius: 6px;
+    box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.236);
+    margin-top:15%;
+    margin-left:3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all ease-in-out;
+    background-color: #4158D0;
+    color:#FFCC70;
+  
+}
+.hourWeather:hover{
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.time{
+    font-weight: 300;
+    line-height: 1;
+    font-size: 0.1vh;
+}
+ p{
+    display: block;
+    margin: 0.01vh;
+    font-family: "Lato";
+}
+.description{
+    font-weight: 400;
+    line-height:1;
+    font-size:00.1vh;
+}
+
+.time-container{
+    font-size:1.8vh;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    color:#FFCC70;
+}
+img{
+    height:2.7vh;
+    width: auto;
+}
+.temperatureHour{
+    font-weight: 800;
+    font-size:1vh;
+    color:#FFCC70;
+
+}
+.time{
+    padding-top: 1vh;
+    font-size:0.25vh;
+}
+.hourly-details-grid {
+    grid-row-gap: 0;
+    grid-column-gap: 1.4vh;
+    row-gap: 0px;
+    column-gap: 1.4vh;
+    display: grid;
+    flex: 1 1;
+    grid-template-columns: auto auto;
+    padding:5px 15px;
+    font-size:0.35vh;
+
+
+}
+.hourly-details-grid-item{
+    display: flex;
+    justify-content: space-evenly;
+    border-right: 1px solid #3333331b;
+    border-left: 1px solid #3333331b;
+}
