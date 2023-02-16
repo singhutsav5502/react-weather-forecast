@@ -63,13 +63,14 @@ p.hourTemp{
     grid-row-gap: 0;
     grid-column-gap: 1.4vh;
     row-gap: 0px;
-    grid-column-gap: 0.1vh;
+    column-gap: 0.1vh;
     display: grid;
     flex: 1 1;
     grid-template-columns: auto auto auto;
     padding:5px 15px;
     font-size:1vw;
-    transition:0.2s all ease-in-out;
+    transition:0.2s opacity ease-in-out;
+    transition:0.5s position ease-in-out;
     position: absolute;
     opacity: 0;
 }
@@ -78,6 +79,7 @@ p.hourTemp{
     position: static;
 }
 .hourly-details-grid-item{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }

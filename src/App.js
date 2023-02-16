@@ -44,10 +44,10 @@ function App() {
         {currentWeather ? <CurrentWeather data={currentWeather} /> : <CurrentWeatherDummy />}
         <div className="buttons-container">
           <div className="hourlyButtonContainer">
-            <button className="forecast-title-button hourly" onClick={hourlyClickHandler}>Hourly </button>
+            <button className="forecast-title-button hourly button" onClick={hourlyClickHandler} autoFocus>Hourly </button>
           </div>
           <div className="weeklyButtonContainer">
-            <button className="forecast-title-button weekly" onClick={weeklyClickHandler}>Weekly </button>
+            <button className="forecast-title-button weekly button" onClick={weeklyClickHandler}>Weekly </button>
           </div>
         </div>
         {forecast && <HourForecast data={forecast} visibility={visibleHourly} />}

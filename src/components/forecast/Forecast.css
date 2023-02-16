@@ -3,7 +3,7 @@
     width: 93%;
     position: absolute;
     opacity:0;
-    transition:0.2s all ease-in-out;
+    transition:0.2s opacity ease-in-out;
 }
 .forecast-container.visible{
     position:static;
