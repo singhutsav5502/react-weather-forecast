@@ -6,7 +6,7 @@
 
 .forecast-title {
     display: block;
-    font-size: 23px;
+    font-size: 0.021vh;
     font-weight: 700;
     color: #28398e;
     margin-top: 10px;
@@ -17,12 +17,12 @@
 .daily-item {
     background-color: #f9f9f9;
     border-radius: 6px;
-    height: 40px;
+    height: 2.7vh;
     margin: 5px;
     display: flex;
     align-items: center;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 1.35vh;
     padding: 5px 20px;
     box-shadow: 2px 2px 5px #33333367;
     opacity: 0.75;
@@ -42,7 +42,7 @@
     color:#FFCC70;
 }
 .icon-small {
-    width: 40px;
+    width: 2.7vh;
     height: auto;
 }
 
@@ -50,12 +50,12 @@
     color: #212121;
     flex: 1 1;
     font-weight: 600;
-    margin-left: 15px;
+    margin-left: 1.4vh;
 }
 
 .description {
     flex: 1 1;
-    margin-right: 15px;
+    margin-right: 1.4vh;
     text-align: right;
 }
 
@@ -65,13 +65,16 @@
 
 .daily-details-grid {
     grid-row-gap: 0;
-    grid-column-gap: 15px;
+    grid-column-gap: 1.4vh;
     row-gap: 0px;
-    column-gap: 15px;
+    column-gap: 1.4vh;
     display: grid;
     flex: 1 1;
     grid-template-columns: auto auto;
     padding:5px 15px;
+    font-size:1.35vh;
+
+
 }
 .daily-details-grid-item{
     align-items: center;
