@@ -1,9 +1,9 @@
 
 .container {
   margin: auto;
-  margin:5% auto 10px auto;
+  margin:2% auto 10px auto;
   width: 85vw;
-  height: 75vh;
+  height: 95vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -33,9 +33,10 @@
   background-color: #e1e4f5;
 }
 .weatherSide h1{
-  font-size:5vh;
+  font-size:2.5vw;
   color:#333;
   font-weight: bold;
   padding-left:1vh;
-  margin-bottom:0.1vh;
+  top:5vw;
+  position: relative;
 }

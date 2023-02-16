@@ -3,7 +3,7 @@
     width: 90%;
     border-radius: 6px;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.236);
-    padding:0.001vh;
+    padding:2vh;
     margin-top:15%;
     margin-left:3%;
     display:flex;
@@ -15,7 +15,7 @@
 .city{
     font-weight: 300;
     line-height: 1;
-    font-size: 1vh;
+    font-size: 2vh;
 }
 .left p{
     display: block;
@@ -66,7 +66,7 @@
 }
 .details{
     padding-top: 1vh;
-    font-size:0.25vh;
+    font-size:2vh;
 }
 .description-container{
     color:#FFCC70;
