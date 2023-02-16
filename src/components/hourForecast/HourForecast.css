@@ -20,7 +20,7 @@
 .time{
     font-weight: 300;
     line-height: 1;
-    font-size: 0.1vh;
+    font-size: 0.01vh;
 }
  p{
     display: block;
@@ -40,13 +40,13 @@
     align-items: flex-start;
     color:#FFCC70;
 }
-img{
+.hour-icon{
     height:2.7vh;
     width: auto;
 }
-.temperatureHour{
+p.hourTemp{
     font-weight: 800;
-    font-size:1vh;
+    font-size:0.01vh;
     color:#FFCC70;
 
 }

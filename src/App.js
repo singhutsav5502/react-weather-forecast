@@ -25,7 +25,7 @@ function App() {
       })
       .catch((err) => { console.log(err) });
   };
-  console.log(forecast);
+  console.log(currentWeather);
   return (
     <div className="container">
       <div className="search">
@@ -34,14 +34,10 @@ function App() {
       <div className="weatherSide">
         <h1>Today</h1>
         {currentWeather ? <CurrentWeather data={currentWeather} /> : <CurrentWeatherDummy />}
-        <div className="hourly-details-grid">
-          <HourForecast />
-          <HourForecast />
-          <HourForecast />
-          <HourForecast />
-          <HourForecast />
-          <HourForecast />
-        </div>
+        
+          {forecast && <HourForecast data={forecast}/> }
+        
+        <label className="forecast-title">Daily </label>
         {forecast && <Forecast data={forecast} />}
       </div>
     </div>
