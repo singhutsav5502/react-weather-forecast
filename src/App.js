@@ -9,7 +9,16 @@ import { WEATHER_API_KEY, WEATHER_API_URL } from './api';
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
-
+  const [visibleHourly, setVisibleHourly] = useState("visible");
+  const [visibleWeekly, setVisibleWeekly] = useState(" ");
+  const hourlyClickHandler = () => {
+      setVisibleHourly("visible");
+      setVisibleWeekly(" ");
+  }
+  const weeklyClickHandler = () => {
+      setVisibleHourly(" ");
+      setVisibleWeekly("visible");
+  }
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
     const currentWeatherFetch = fetch(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`);
@@ -25,7 +34,6 @@ function App() {
       })
       .catch((err) => { console.log(err) });
   };
-  console.log(currentWeather);
   return (
     <div className="container">
       <div className="search">
@@ -34,11 +42,18 @@ function App() {
       <div className="weatherSide">
         <h1>Today</h1>
         {currentWeather ? <CurrentWeather data={currentWeather} /> : <CurrentWeatherDummy />}
-        
-          {forecast && <HourForecast data={forecast}/> }
-        
-        <label className="forecast-title">Daily </label>
-        {forecast && <Forecast data={forecast} />}
+        <div className="buttons-container">
+          <div className="hourlyButtonContainer">
+            <button className="forecast-title-button hourly" onClick={hourlyClickHandler}>Hourly </button>
+          </div>
+          <div className="weeklyButtonContainer">
+            <button className="forecast-title-button weekly" onClick={weeklyClickHandler}>Weekly </button>
+          </div>
+        </div>
+        {forecast && <HourForecast data={forecast} visibility={visibleHourly} />}
+
+
+        {forecast && <Forecast data={forecast} visibility={visibleWeekly} />}
       </div>
     </div>
   );

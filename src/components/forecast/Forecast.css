@@ -1,17 +1,13 @@
 .forecast-container {
     margin-left: 2%;
     width: 93%;
-
+    position: absolute;
+    opacity:0;
+    transition:0.2s all ease-in-out;
 }
-
-.forecast-title {
-    display: block;
-    font-size: 0.021vh;
-    font-weight: 700;
-    color: #28398e;
-    margin-top: 10px;
-    position: relative;
-    left: 3%;
+.forecast-container.visible{
+    position:static;
+    opacity:1;
 }
 
 .daily-item {

@@ -40,3 +40,31 @@
   top:5vw;
   position: relative;
 }
+.buttons-container{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+.hourlyButtonContainer{
+  display: flex;
+  justify-content: start;
+  flex: 1 1;
+}
+.weeklyButtonContainer{
+  display: flex;
+  justify-content: end;
+  flex: 1 1;
+}
+.forecast-title-button {
+  font-size: 1.2vw;
+  font-weight: 700;
+  color: #28398e;
+  margin-top: 2vh;
+  position: relative;
+}
+.hourly{
+  left: 5%;
+}
+.weekly{
+  right:5%;
+}

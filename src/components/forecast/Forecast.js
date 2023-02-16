@@ -2,12 +2,12 @@ import React from "react";
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from "react-accessible-accordion";
 import './Forecast.css';
 const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', "Sunday"];
-const Forecast = ({ data }) => {
+const Forecast = ({ data,visibility }) => {
   const dayInAWeek = new Date().getDay();
   const forecastDays = WEEK_DAYS.slice(dayInAWeek, WEEK_DAYS.length).concat(WEEK_DAYS.slice(0, dayInAWeek));
 
   return (
-    <div className='forecast-container'>
+    <div className={`forecast-container ${visibility}`}>
 
       <Accordion allowZeroExpanded>
         {data.list.splice(0, 5).map((item, idx) => (
