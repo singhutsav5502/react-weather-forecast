@@ -41,7 +41,6 @@
   margin-top: 5vw;
   display: flex;
   justify-content: center;
-  margin-right: 4.8vw;
 }
 
 .weeklyButtonContainer {
@@ -95,16 +94,17 @@
 }
 
 .weatherSide h1 {
-  font-size: 2vw;
+  font-size: 2.3vw;
   color: rgb(207, 207, 207);
   font-weight: bold;
-  padding-left:50vh;
+  padding-left:48vh;
   top: 7vw;
   position: relative;
+  
 }
 
 .weatherSide h2 {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   color: rgb(207, 207, 207);
   font-weight: bold;
   padding-left: 50vh;
@@ -118,15 +118,6 @@
   margin-top: 2vh;
   position: relative;
 }
-
-.hourly {
-  left: 5%;
-}
-
-.weekly {
-  right: 5%;
-}
-
 
 .temp-unit-button-container {
   top: 1vh;
@@ -306,4 +297,7 @@
 
 .search.light .search-title {
   color: #3b3b3b;
+}
+.weatherSide.light h1,.weatherSide.light h2{
+  text-decoration: underline solid #333;
 }
