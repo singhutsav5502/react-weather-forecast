@@ -5,7 +5,7 @@ const CurrentWeather = ({ data, suffix , isCelc}) => {
     let feelsLike = data.main.feels_like;
     if (!isCelc) {
         temp = Math.round((temp * 1.8) + 32);
-        feelsLike = (data.main.feels_like*1.8) +32;
+        feelsLike = Math.round((data.main.feels_like*1.8) +32);
     }
     else{
         temp = Math.round(data.main.temp); 
