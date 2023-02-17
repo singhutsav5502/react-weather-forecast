@@ -77,11 +77,11 @@ function App() {
             : <CurrentWeatherDummy theme={theme} />}
           <div className="buttons-container">
             <div className="hourlyButtonContainer">
-              <button className={`forecast-title-button hourly button ${theme}`}
-                onClick={hourlyClickHandler} autoFocus>Hourly </button>
+              <button className={`forecast-title-button hourly button ${theme} ${visibleHourly}`}
+                onClick={hourlyClickHandler} >Hourly </button>
             </div>
             <div className="weeklyButtonContainer">
-              <button className={`forecast-title-button weekly button ${theme} `}
+              <button className={`forecast-title-button weekly button ${theme} ${visibleWeekly}`}
                 onClick={weeklyClickHandler}>Weekly </button>
             </div>
           </div>
@@ -102,9 +102,10 @@ function App() {
             visibility={visibleWeekly}
             suffix={tempSuffix}
             isCelc={isCelc}
+            theme={theme}
           />
           :
-          <ForecastDummy visibility={visibleWeekly} />}
+          <ForecastDummy visibility={visibleWeekly} suffix={tempSuffix} theme={theme} />}
       </div>
     </div>
   );
