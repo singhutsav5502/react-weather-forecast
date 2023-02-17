@@ -10,7 +10,7 @@ const Forecast = ({ data, visibility, isCelc, suffix }) => {
     <div className={`forecast-container ${visibility}`}>
 
       <Accordion allowZeroExpanded>
-        {data.list.splice(0, 5).map((item, idx) => {
+        {data.list.slice(0, 5).map((item, idx) => {
 
           let temp_min = Math.round(item.main.temp_min);
           let temp_max = Math.round(item.main.temp_max);
