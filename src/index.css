@@ -5,7 +5,8 @@ body {
   font-family: "Lato","Roboto" , "Arial" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("heroImage4_blur.jpg");
+  background-image: url("spaceBack3.jpg");
+  background-size: contain;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;

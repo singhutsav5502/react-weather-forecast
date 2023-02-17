@@ -3,7 +3,7 @@
     width: 93%;
     position: absolute;
     opacity:0;
-    transition:0.2s opacity ease-in-out;
+    transition:0.2s all ease-in-out;
 }
 .forecast-container.visible{
     position:static;
@@ -14,7 +14,7 @@
     background-color: #f9f9f9;
     border-radius: 6px;
     height: 2.7vh;
-    margin: 5px;
+    margin: 1%;
     display: flex;
     align-items: center;
     cursor: pointer;

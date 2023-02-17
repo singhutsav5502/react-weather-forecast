@@ -40,6 +40,7 @@ function App() {
         <Search onSearchChange={handleOnSearchChange} />
       </div>
       <div className="weatherSide">
+        <div className = "weatherContainer">
         <h1>Today</h1>
         {currentWeather ? <CurrentWeather data={currentWeather} /> : <CurrentWeatherDummy />}
         <div className="buttons-container">
@@ -48,6 +49,7 @@ function App() {
           </div>
           <div className="weeklyButtonContainer">
             <button className="forecast-title-button weekly button" onClick={weeklyClickHandler}>Weekly </button>
+          </div>
           </div>
         </div>
         {forecast && <HourForecast data={forecast} visibility={visibleHourly} />}

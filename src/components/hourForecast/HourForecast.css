@@ -69,7 +69,7 @@ p.hourTemp{
     grid-template-columns: auto auto auto;
     padding:5px 15px;
     font-size:1vw;
-    transition:0.2s opacity ease-in-out;
+    transition:0.2s all ease-in-out;
     transition:0.5s position ease-in-out;
     position: absolute;
     opacity: 0;
@@ -81,5 +81,5 @@ p.hourTemp{
 .hourly-details-grid-item{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
