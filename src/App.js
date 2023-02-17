@@ -63,16 +63,16 @@ function App() {
         <div className="weatherContainer">
             <h1>Today</h1>
             <div className="temp-unit-button-container">
-              <div className={`temp-unit-button celc ${tempActiveCelc} buttonU`} onClick={handleCelcSwitch}>°C</div>
-              <div className={`temp-unit-button celc ${tempActiveFar} buttonU`} onClick={handleFarSwitch}>°F</div>
+              <div className={`temp-unit-button celc ${tempActiveCelc} buttonU ${theme}`} onClick={handleCelcSwitch}>°C</div>
+              <div className={`temp-unit-button celc ${tempActiveFar} buttonU ${theme}`} onClick={handleFarSwitch}>°F</div>
             </div>
           {currentWeather ? <CurrentWeather data={currentWeather} suffix={tempSuffix} isCelc={isCelc} theme={theme}/> : <CurrentWeatherDummy theme={theme}/>}
           <div className="buttons-container">
             <div className="hourlyButtonContainer">
-              <button className="forecast-title-button hourly button" onClick={hourlyClickHandler} >Hourly </button>
+              <button className={`forecast-title-button hourly button ${theme}`} onClick={hourlyClickHandler} autoFocus>Hourly </button>
             </div>
             <div className="weeklyButtonContainer">
-              <button className="forecast-title-button weekly button" onClick={weeklyClickHandler}>Weekly </button>
+              <button className={`forecast-title-button weekly button ${theme} `}onClick={weeklyClickHandler}>Weekly </button>
             </div>
           </div>
         </div>
