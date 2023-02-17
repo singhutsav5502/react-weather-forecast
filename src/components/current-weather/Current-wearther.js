@@ -8,7 +8,7 @@ const CurrentWeather = ({ data }) => {
                     <p className="temperature"> {Math.round(data.main.temp)}°C</p>
                     <div className='description-container'>
                         <img alt="weather" className="weather-icon" src={process.env.PUBLIC_URL + `/icons/${data.weather[0].icon}.png`} />
-                        <p className="description">{data.weather[0].description}</p>
+                        <p className="current-weather-description">{data.weather[0].description}</p>
                         <p className="city">{data.city}  </p>
                     </div>
                 </div>

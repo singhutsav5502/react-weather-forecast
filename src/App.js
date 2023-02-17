@@ -47,7 +47,7 @@ function App() {
           {currentWeather ? <CurrentWeather data={currentWeather} /> : <CurrentWeatherDummy />}
           <div className="buttons-container">
             <div className="hourlyButtonContainer">
-              <button className="forecast-title-button hourly button" onClick={hourlyClickHandler} autoFocus>Hourly </button>
+              <button className="forecast-title-button hourly button" onClick={hourlyClickHandler} >Hourly </button>
             </div>
             <div className="weeklyButtonContainer">
               <button className="forecast-title-button weekly button" onClick={weeklyClickHandler}>Weekly </button>
@@ -57,7 +57,7 @@ function App() {
         {forecast ? <HourForecast data={forecast} visibility={visibleHourly} /> : <HourForecastDummy visibility={visibleHourly} />}
 
 
-        {forecast ? <Forecast data={forecast} visibility={visibleWeekly} /> : <ForecastDummy visibility={visibleWeekly}/>}
+        {forecast ? <Forecast data={forecast} visibility={visibleWeekly} /> : <ForecastDummy visibility={visibleWeekly} />}
       </div>
     </div>
   );

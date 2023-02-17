@@ -1,74 +1,90 @@
-
-.weather{
+.weather {
     width: 90%;
     border-radius: 6px;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.236);
-    padding:2vh;
-    margin-top:15%;
-    margin-left:3%;
-    margin-right:300%;
-    display:flex;
+    padding: 2vh;
+    margin-top: 15%;
+    margin-left: 3%;
+    margin-right: 300%;
+    display: flex;
     transition: 5s all ease-in-out;
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    color:#FFCC70;
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: #FFCC70;
 }
-.city{
+
+.city {
     font-weight: 300;
     line-height: 1;
     font-size: 1vw;
 }
-.left p{
+
+.left p {
     display: block;
     margin: 0.2vh;
     font-family: "Lato";
 }
-.description{
+
+.current-weather-description {
     font-weight: 400;
-    line-height:1;
-    font-size:2vw;
+    line-height: 1;
+    font-size: 2vw;
 }
 
-.left{
+.left {
     padding-left: 5%;
     width: 60%;
 }
-.description-container{
-    font-size:1.8vw;
+
+.description-container {
+    font-size: 1.8vw;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: flex-start;
 }
-.weather-icon{
-    height:5vw;
+
+.weather-icon {
+    height: 5vw;
     width: auto;
 }
-.right{
-    display:flex;
+
+.right {
+    display: flex;
     flex-direction: column;
     text-align: left;
     justify-content: flex-start;
-    border-left: 1px solid #3333331b;
-    color:#3333335a;
+    border-left: 1px solid #7575753b;
+    color: #757575;
 }
-.right-items{
-    padding:0.2vh;
+
+.right-items {
+    padding: 0.2vh;
 }
-.temperature{
+
+.temperature {
     font-weight: 800;
-    font-size:2.5vw;
-    color:#FFCC70;
+    font-size: 2.5vw;
+    color: #FFCC70;
 }
-.parameter-row{
-    margin:5px;
+
+.parameter-row {
+    margin: 5px;
 }
-.parameter-label{
-    font-weight:400;
+
+.parameter-label {
+    font-weight: 400;
 }
-.details{
+
+.details {
     padding-top: 1vw;
-    font-size:1vw;
+    font-size: 1vw;
 }
-.description-container{
-    color:#FFCC70;
+
+.description-container {
+    color: #FFCC70;
 }

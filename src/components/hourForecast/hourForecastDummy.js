@@ -9,10 +9,10 @@ const HourForecastDummy = ({visibility }) => {
       <div className="hourly-details-grid-item" key={indx}>
       <div className="hourWeather">
         <div className="left">
-          <p className="hourTemp"> temp°C</p>
+          <p className="hourTemp"> xx°C</p>
           <div className='time-container'>
             <img alt="weather" className="hour-icon" src={process.env.PUBLIC_URL + `/icons/01d.png`} />
-            <p className="time">time</p>
+            <p className="time">y AM</p>
           </div>
         </div>
       </div>
