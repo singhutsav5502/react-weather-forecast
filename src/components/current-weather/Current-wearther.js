@@ -1,11 +1,21 @@
 import React from 'react';
 import './Current-weather.css'
-const CurrentWeather = ({ data }) => {
+const CurrentWeather = ({ data, suffix , isCelc}) => {
+    let temp = Math.round(data.main.temp);
+    let feelsLike = data.main.feels_like;
+    if (!isCelc) {
+        temp = Math.round((temp * 1.8) + 32);
+        feelsLike = (data.main.feels_like*1.8) +32;
+    }
+    else{
+        temp = Math.round(data.main.temp); 
+        feelsLike = data.main.feels_like;
+    }
     return (
         <div className="weather-container">
             <div className="weather">
                 <div className="left">
-                    <p className="temperature"> {Math.round(data.main.temp)}°C</p>
+                    <p className="temperature">{`${temp} ${suffix}`}</p>
                     <div className='description-container'>
                         <img alt="weather" className="weather-icon" src={process.env.PUBLIC_URL + `/icons/${data.weather[0].icon}.png`} />
                         <p className="current-weather-description">{data.weather[0].description}</p>
@@ -18,7 +28,7 @@ const CurrentWeather = ({ data }) => {
                         <div className="details">
                             <div className="parameter-row">
                                 <span className="parameter-label">Feels like</span>
-                                <span className="parameter-value"> {data.main.feels_like}°C </span>
+                                <span className="parameter-value"> {`${feelsLike} ${suffix}`} </span>
                             </div>
                             <div className="parameter-row">
                                 <span className="parameter-label">Wind</span>

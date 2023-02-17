@@ -1,3 +1,6 @@
+.weather-container{
+    margin-top:0;
+}
 .weather {
     width: 90%;
     border-radius: 6px;

@@ -18,7 +18,7 @@
     background-color: #212121;
     border-radius: 6px;
     height: 2.7vh;
-    margin: 1%;
+    margin: 1vh;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -49,7 +49,8 @@
     flex: 1 1;
     margin-right: 1.4vh;
     text-align: right;
-    color: #203A43;
+    color: #757575;
+    
 }
 
 
@@ -72,8 +73,6 @@
     display: flex;
     height: 2.4vh;
     justify-content: space-evenly;
-    border-right: 1px solid #3333331b;
-    border-left: 1px solid #3333331b;
     width: 95%;
 }
 
@@ -88,7 +87,7 @@
 }
 
 .min-max {
-    color: #203A43;
+    color: #757575;;
 }
 
 .daily-item:hover {
@@ -112,4 +111,5 @@
 
 .daily-item:hover .day {
     color: #FFCC70;
+    text-shadow:2px 2px 10px #FFCC70;
 }

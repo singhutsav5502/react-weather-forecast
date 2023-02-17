@@ -13,6 +13,10 @@ function App() {
   const [forecast, setForecast] = useState(null);
   const [visibleHourly, setVisibleHourly] = useState("visible");
   const [visibleWeekly, setVisibleWeekly] = useState(" ");
+  const [tempActiveCelc, setTempActiveCelc] = useState("active");
+  const [tempActiveFar, setTempActiveFar] = useState(" ");
+  const [tempSuffix, setTempSuffix] = useState("°C");
+  const [isCelc, setIsCelc] = useState(true);
   const hourlyClickHandler = () => {
     setVisibleHourly("visible");
     setVisibleWeekly(" ");
@@ -20,6 +24,18 @@ function App() {
   const weeklyClickHandler = () => {
     setVisibleHourly(" ");
     setVisibleWeekly("visible");
+  }
+  const handleCelcSwitch = () => {
+    setTempActiveCelc("active");
+    setTempActiveFar(" ");
+    setTempSuffix(" °C");
+    setIsCelc(true);
+  }
+  const handleFarSwitch = () => {
+    setTempActiveCelc(" ");
+    setTempActiveFar("active");
+    setTempSuffix(" °F");
+    setIsCelc(false);
   }
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
@@ -42,9 +58,14 @@ function App() {
         <Search onSearchChange={handleOnSearchChange} />
       </div>
       <div className="weatherSide">
+
         <div className="weatherContainer">
-          <h1>Today</h1>
-          {currentWeather ? <CurrentWeather data={currentWeather} /> : <CurrentWeatherDummy />}
+            <h1>Today</h1>
+            <div className="temp-unit-button-container">
+              <div className={`temp-unit-button celc ${tempActiveCelc} buttonU`} onClick={handleCelcSwitch}>°C</div>
+              <div className={`temp-unit-button celc ${tempActiveFar} buttonU`} onClick={handleFarSwitch}>°F</div>
+            </div>
+          {currentWeather ? <CurrentWeather data={currentWeather} suffix={tempSuffix} isCelc={isCelc} /> : <CurrentWeatherDummy />}
           <div className="buttons-container">
             <div className="hourlyButtonContainer">
               <button className="forecast-title-button hourly button" onClick={hourlyClickHandler} >Hourly </button>
@@ -54,10 +75,10 @@ function App() {
             </div>
           </div>
         </div>
-        {forecast ? <HourForecast data={forecast} visibility={visibleHourly} /> : <HourForecastDummy visibility={visibleHourly} />}
+        {forecast ? <HourForecast data={forecast} visibility={visibleHourly} suffix={tempSuffix} isCelc={isCelc} /> : <HourForecastDummy visibility={visibleHourly} />}
 
 
-        {forecast ? <Forecast data={forecast} visibility={visibleWeekly} /> : <ForecastDummy visibility={visibleWeekly} />}
+        {forecast ? <Forecast data={forecast} visibility={visibleWeekly} suffix={tempSuffix} isCelc={isCelc} /> : <ForecastDummy visibility={visibleWeekly} />}
       </div>
     </div>
   );
