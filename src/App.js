@@ -8,7 +8,7 @@ import HourForecast from './components/hourForecast/hourForecast.js';
 import { WEATHER_API_KEY, WEATHER_API_URL } from './api';
 import ForecastDummy from './components/forecast/ForecastDummy.js'
 import HourForecastDummy from './components/hourForecast/hourForecastDummy';
-function App({themeImageHandler}) {
+function App({ themeImageHandler }) {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
   const [visibleHourly, setVisibleHourly] = useState("visible");
@@ -18,6 +18,7 @@ function App({themeImageHandler}) {
   const [tempSuffix, setTempSuffix] = useState("°C");
   const [isCelc, setIsCelc] = useState(true);
   const [theme, setTheme] = useState("light");
+  const [themeToggle, setThemeToggle] = useState(true);
   const hourlyClickHandler = () => {
     setVisibleHourly("visible");
     setVisibleWeekly(" ");
@@ -38,13 +39,17 @@ function App({themeImageHandler}) {
     setTempSuffix(" °F");
     setIsCelc(false);
   }
-  const lightThemeClick = () => { 
-    setTheme("light");
-    themeImageHandler(true);
-  }
-  const darkThemeClick = () => { 
-    setTheme(" ");
-    themeImageHandler(false);
+  const lightThemeClick = () => {
+    if (!themeToggle) {
+      setTheme("light");
+      themeImageHandler(true);
+      setThemeToggle(true);
+    }
+    else{
+      setTheme(" ");
+      themeImageHandler(false);
+      setThemeToggle(false);
+    }
   }
   const handleOnSearchChange = (searchData) => {
     const [lat, lon] = searchData.value.split(" ");
@@ -64,9 +69,9 @@ function App({themeImageHandler}) {
   return (
     <div className="container">
       <div className="search">
-        <div className = "theme-buttons-container">
-          <button className = "theme-button" onClick={lightThemeClick}>Day</button>
-          <button className = "theme-button" onClick={darkThemeClick}>Night</button>
+        <div className="theme-buttons-container">
+          <button className={`theme-button ${theme}`} onClick={lightThemeClick}></button>
+          <label className = {theme}>Change Theme</label>
         </div>
         <Search onSearchChange={handleOnSearchChange} />
       </div>
