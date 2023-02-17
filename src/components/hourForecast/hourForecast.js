@@ -1,6 +1,6 @@
 import React from 'react';
 import './HourForecast.css';
-const HourForecast = ({ data, visibility , isCelc , suffix }) => {
+const HourForecast = ({ data, visibility, isCelc, suffix, theme }) => {
 
   return (
     <div className={`hourly-details-grid ${visibility}`}>
@@ -15,7 +15,7 @@ const HourForecast = ({ data, visibility , isCelc , suffix }) => {
         const time = (new Date(item.dt_txt)).getUTCHours();
         return (
           <div className="hourly-details-grid-item" key={indx}>
-            <div className="hourWeather">
+            <div className={`hourWeather ${theme}`}>
               <div className="left">
                 <p className="hourTemp">{`${temp}${suffix}`}</p>
                 <div className='time-container'>
