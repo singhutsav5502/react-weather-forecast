@@ -85,9 +85,10 @@ p.hourTemp {
     padding: 5px 15px;
     font-size: 1vw;
     transition: 0.2s all ease-in-out;
-    transition: 0.2s position ease-in-out;
     position: absolute;
     opacity: 0;
+    top:500%;
+
 }
 
 .hourly-details-grid.visible {
