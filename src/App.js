@@ -17,6 +17,7 @@ function App() {
   const [tempActiveFar, setTempActiveFar] = useState(" ");
   const [tempSuffix, setTempSuffix] = useState("°C");
   const [isCelc, setIsCelc] = useState(true);
+  const [theme , setTheme] = useState("light");
   const hourlyClickHandler = () => {
     setVisibleHourly("visible");
     setVisibleWeekly(" ");
@@ -65,7 +66,7 @@ function App() {
               <div className={`temp-unit-button celc ${tempActiveCelc} buttonU`} onClick={handleCelcSwitch}>°C</div>
               <div className={`temp-unit-button celc ${tempActiveFar} buttonU`} onClick={handleFarSwitch}>°F</div>
             </div>
-          {currentWeather ? <CurrentWeather data={currentWeather} suffix={tempSuffix} isCelc={isCelc} /> : <CurrentWeatherDummy />}
+          {currentWeather ? <CurrentWeather data={currentWeather} suffix={tempSuffix} isCelc={isCelc} theme={theme}/> : <CurrentWeatherDummy theme={theme}/>}
           <div className="buttons-container">
             <div className="hourlyButtonContainer">
               <button className="forecast-title-button hourly button" onClick={hourlyClickHandler} >Hourly </button>

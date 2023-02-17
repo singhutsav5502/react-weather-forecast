@@ -1,9 +1,9 @@
 import React from 'react';
 import './Current-weather.css'
-const CurrentWeatherDummy = () => {
+const CurrentWeatherDummy = ({theme}) => {
     return (
         <div className="weather-container">
-            <div className="weather">
+            <div className={`weather ${theme}`}>
                 <div className="left">
                     <p className="temperature">  Description</p>
                     <div className='description-container'>

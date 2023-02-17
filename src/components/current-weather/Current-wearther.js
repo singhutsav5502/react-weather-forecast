@@ -1,6 +1,6 @@
 import React from 'react';
 import './Current-weather.css'
-const CurrentWeather = ({ data, suffix , isCelc}) => {
+const CurrentWeather = ({ data, suffix , isCelc ,theme}) => {
     let temp = Math.round(data.main.temp);
     let feelsLike = data.main.feels_like;
     if (!isCelc) {
@@ -13,7 +13,7 @@ const CurrentWeather = ({ data, suffix , isCelc}) => {
     }
     return (
         <div className="weather-container">
-            <div className="weather">
+            <div className={`weather ${theme}`}>
                 <div className="left">
                     <p className="temperature">{`${temp} ${suffix}`}</p>
                     <div className='description-container'>
