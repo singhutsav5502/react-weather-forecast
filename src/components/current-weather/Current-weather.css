@@ -1,5 +1,6 @@
 .weather-container {
     margin-top: 0;
+    transition: 10s all ease-in-out;
 }
 
 .weather {
@@ -109,9 +110,13 @@
 }
 
 .weather.light .description-container,
-.weather.light .temperature , .weather.light .description {
-    color: #f9f871;
+.weather.light .description {
+    color: #E1795F;
+}
+.weather.light .temperature{
+    color: #E1795F;
+    
 }
 .weather.light .right {
-    color:#afed82;
+    color: #afed82;
 }

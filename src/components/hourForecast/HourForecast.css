@@ -105,20 +105,20 @@ p {
 
 /* LIGHT */
 .hourWeather.light:hover{
+    opacity:1;
     background: #2193b0;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    background: -webkit-linear-gradient(to right, rgba(110, 214, 237,0.5), rgba(33, 147, 176,0.5));
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #2193b0);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(110, 214, 237,0.5), rgba(33, 147, 176,0.8));
 }
 .hourWeather.light{
-    color:#f9f871;
-    text-shadow: 2px 2px 10px #f9f871;
+    color:#E1795F;
+    text-shadow: 2px 2px 10px #E1795F;
 }
 .hourWeather.light .time-container{
-    color:#f9f871;
+    color:#E1795F;
 }
 .hourWeather.light .hourTemp{
-    color:#f9f871;
+    color:#E1795F;
 }

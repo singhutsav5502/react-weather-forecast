@@ -94,10 +94,11 @@
 
 .button {
   cursor: pointer;
-  color: #203A43;
-  border: 1px solid #FFCC70;
-  box-shadow: 1px 2px 10px #FFCC70;
-  background-color: #FFCC70;
+
+  border: 1px solid #203A43;
+  box-shadow: 1px 2px 10px #203A43;
+  color: #FFCC70;
+  background-color: #203A43;
   border-radius: 5px;
   transition: 0.1s all ease-in-out;
   opacity: 0.75;
@@ -106,18 +107,18 @@
 
 .button:hover {
   opacity: 1;
-  border: 1px solid #203A43;
-  box-shadow: 1px 2px 10px #203A43;
-  color: #FFCC70;
-  background-color: #203A43;
+  color: #203A43;
+  border: 1px solid #FFCC70;
+  box-shadow: 1px 2px 10px #FFCC70;
+  background-color: #FFCC70;
 }
 
 .button.visible {
   opacity: 1;
-  border: 1px solid #203A43;
-  box-shadow: 1px 2px 10px #203A43;
-  color: #FFCC70;
-  background-color: #203A43;
+  color: #203A43;
+  border: 1px solid #FFCC70;
+  box-shadow: 1px 2px 10px #FFCC70;
+  background-color: #FFCC70;
 }
 
 .temp-unit-button-container {
@@ -136,9 +137,10 @@
 .buttonU {
   font-size: 0.5vw;
   cursor: pointer;
-  color: #203A43;
-  border: 1px solid #FFCC70;
-  background-color: #FFCC70;
+  border: 1px solid #203A43;
+  box-shadow: 1px 2px 10px #203A43;
+  color: #FFCC70;
+  background-color: #203A43;
   transition: 0.2s all ease-in-out;
   padding: 1vw;
   margin: 2% 5%;
@@ -147,20 +149,21 @@
 }
 
 .buttonU:hover {
+  cursor: pointer;
   opacity: 1;
-  border: 1px solid #203A43;
-  box-shadow: 1px 2px 10px #203A43;
-  color: #FFCC70;
-  background-color: #203A43;
+  border: 1px solid #FFCC70;
+  color: #203A43;
+  border: 1px solid #FFCC70;
+  background-color: #FFCC70;
 }
 
 .buttonU.active {
   cursor: default;
   opacity: 1;
-  border: 1px solid #203A43;
-  box-shadow: 1px 2px 10px #203A43;
-  color: #FFCC70;
-  background-color: #203A43;
+
+  color: #203A43;
+  border: 1px solid #FFCC70;
+  background-color: #FFCC70;
 }
 
 
@@ -172,13 +175,15 @@
   background-color: #2193b0;
   box-shadow: 1px 2px 10px #2193b0;
 }
-.buttonU.light:hover{
+
+.buttonU.light:hover {
   opacity: 1;
   border: 1px solid #f9f871;
   box-shadow: 1px 2px 10px #f9f871;
   color: #2193b0;
   background-color: #f9f871;
 }
+
 .buttonU.light.active {
   cursor: default;
   opacity: 1;
@@ -188,12 +193,13 @@
   background-color: #f9f871;
 }
 
-.button.light{
+.button.light {
   color: #f9f871;
   border: 1px solid #2193b0;
   box-shadow: 1px 2px 10px #2193b0;
   background-color: #2193b0;
 }
+
 .button.light:hover {
   opacity: 1;
   border: 1px solid #f9f871;
@@ -201,7 +207,8 @@
   color: #2193b0;
   background-color: #f9f871;
 }
-.button.light.visible{
+
+.button.light.visible {
   border: 1px solid #f9f871;
   box-shadow: 1px 2px 10px #f9f871;
   color: #2193b0;
