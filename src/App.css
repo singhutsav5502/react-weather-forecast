@@ -194,10 +194,10 @@
 }
 
 .button.light {
-  color: #f9f871;
-  border: 1px solid #2193b0;
-  box-shadow: 1px 2px 10px #2193b0;
-  background-color: #2193b0;
+  color: #E1795F;
+  border: 1px solid rgba(33, 33, 33, 0.5);
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.236);
+  background-color: rgba(33, 33, 33, 0.5);
 }
 
 .button.light:hover {

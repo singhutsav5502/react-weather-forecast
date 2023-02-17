@@ -77,7 +77,7 @@
 }
 
 .daily-details-grid-desc {
-    color: #ffcd7088;
+    color: #ffcd70b8;
     text-shadow: 2px 2px 10px #FFCC70;
 }
 
@@ -133,7 +133,7 @@
     color: #afed82;
     text-shadow: 2px 2px 10px #afed82;
 }
-.daily-details-grid .daily-details-grid-item .daily-details-grid-desc{
+.daily-details-grid.light .daily-details-grid-item .daily-details-grid-desc{
     color: #f9f871;
     text-shadow: 2px 2px 10px #f9f871;
 }
