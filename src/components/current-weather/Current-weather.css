@@ -106,11 +106,14 @@
 
 .weather.light {
 
-    background: #e0e0e0;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
     box-shadow: 20px 20px 60px #bebebe,
-        -20px -20px 60px #ffffff;
+        -40px -40px 60px #ffffff,inset 5px 5px 5px #bebebe;
+        
 }
-
+.weather.light .right{
+    border-left:none;
+}
 .weather.light .description-container,
 .weather.light .description {
     color: #E1795F;

@@ -108,7 +108,7 @@ p {
 
     background: #e0e0e0;
     box-shadow: 33px 33px 66px #bebebe,
-        -33px -33px 66px #ffffff;
+        -33px -33px 66px #ffffff,inset 5px 5px 5px #bebebe;
 }
 
 .hourWeather.light {
