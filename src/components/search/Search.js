@@ -26,7 +26,7 @@ const Search = (props) => {
     };
     return (
         <div className='search-container'>
-            <h1 className= 'title'>Weather Forecast</h1>
+            <h1 className= 'search-title'>Weather Forecast</h1>
             <AsyncPaginate className="search-bar"
                 placeholder="Search for city"
                 debounceTimeout={600}

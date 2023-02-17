@@ -1,16 +1,19 @@
 .weather-container {
-    margin-top: 0;
+    margin-top: 10;
     transition: 10s all ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .weather {
-    width: 90%;
+    flex: 1 1;
+    width: 70%;
     border-radius: 6px;
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.236);
     padding: 2vh;
     margin-top: 15%;
-    margin-left: 3%;
-    margin-right: 300%;
     display: flex;
     transition: 5s all ease-in-out;
     background: #0F2027;
@@ -20,6 +23,7 @@
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #FFCC70;
+
 }
 
 .city {
@@ -58,6 +62,7 @@
 }
 
 .right {
+    padding-top: 2.5%;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -100,23 +105,22 @@
 /* DAY */
 
 .weather.light {
-    background: #2193b0;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #2193b0);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
 }
 
 .weather.light .description-container,
 .weather.light .description {
     color: #E1795F;
 }
-.weather.light .temperature{
+
+.weather.light .temperature {
     color: #E1795F;
-    
+
 }
+
 .weather.light .right {
-    color: #afed82;
+    color: #007185;
 }

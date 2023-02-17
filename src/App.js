@@ -17,8 +17,8 @@ function App({ themeImageHandler }) {
   const [tempActiveFar, setTempActiveFar] = useState(" ");
   const [tempSuffix, setTempSuffix] = useState("°C");
   const [isCelc, setIsCelc] = useState(true);
-  const [theme, setTheme] = useState("light");
-  const [themeToggle, setThemeToggle] = useState(true);
+  const [theme, setTheme] = useState(" ");
+  const [themeToggle, setThemeToggle] = useState(false);
   const hourlyClickHandler = () => {
     setVisibleHourly("visible");
     setVisibleWeekly(" ");
@@ -67,32 +67,14 @@ function App({ themeImageHandler }) {
       .catch((err) => { console.log(err) });
   };
   return (
-    <div className="container">
-      <div className="search">
+    <div className={`container ${theme}`}>
+      <div className={`search ${theme}`}>
         <div className="theme-buttons-container">
           <button className={`theme-button ${theme}`} onClick={lightThemeClick}></button>
           <label className = {theme}>Change Theme</label>
         </div>
         <Search onSearchChange={handleOnSearchChange} />
-      </div>
-      <div className="weatherSide">
-
-        <div className="weatherContainer">
-          <h1>Today</h1>
-          <div className="temp-unit-button-container">
-            <div className={`temp-unit-button celc ${tempActiveCelc} buttonU ${theme}`}
-              onClick={handleCelcSwitch}>°C</div>
-            <div className={`temp-unit-button celc ${tempActiveFar} buttonU ${theme}`}
-              onClick={handleFarSwitch}>°F</div>
-          </div>
-          {currentWeather ? <CurrentWeather
-            data={currentWeather}
-            suffix={tempSuffix}
-            isCelc={isCelc}
-            theme={theme}
-          />
-            : <CurrentWeatherDummy theme={theme} />}
-          <div className="buttons-container">
+        <div className="buttons-container">
             <div className="hourlyButtonContainer">
               <button className={`forecast-title-button hourly button ${theme} ${visibleHourly}`}
                 onClick={hourlyClickHandler} >Hourly </button>
@@ -102,7 +84,29 @@ function App({ themeImageHandler }) {
                 onClick={weeklyClickHandler}>Weekly </button>
             </div>
           </div>
+      </div>
+      <div className={`weatherSide ${theme}`}>
+
+        <div className="weatherContainer">
+          <div className = "headerWeather" > 
+          <h1>Today</h1>
+          <div className="temp-unit-button-container">
+            <div className={`temp-unit-button celc ${tempActiveCelc} buttonU ${theme}`}
+              onClick={handleCelcSwitch}>°C</div>
+            <div className={`temp-unit-button celc ${tempActiveFar} buttonU ${theme}`}
+              onClick={handleFarSwitch}>°F</div>
+          </div>
+         </div>
+          {currentWeather ? <CurrentWeather
+            data={currentWeather}
+            suffix={tempSuffix}
+            isCelc={isCelc}
+            theme={theme}
+          />
+            : <CurrentWeatherDummy theme={theme} />}
+          
         </div>
+        <h2>Forecast</h2>
         {forecast ?
           <HourForecast data={forecast}
             visibility={visibleHourly}
