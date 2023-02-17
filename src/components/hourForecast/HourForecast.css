@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #212121;
+    background-color: rgba(33, 33, 33, 0.5);
     color: #FFCC70;
     transition: 0.2s all ease-in-out;
     cursor: pointer;
@@ -24,9 +24,9 @@
     transform: scale(1);
     background: #0F2027;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: -webkit-linear-gradient(to right, rgba(44, 83, 100,0.5), rgba(32, 58, 67,0.5), rgba(15, 32, 39,0.5));
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, rgba(44, 83, 100,0.9), rgba(32, 58, 67,0.9), rgba(15, 32, 39,0.9));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
