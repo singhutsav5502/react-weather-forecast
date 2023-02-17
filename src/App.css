@@ -97,10 +97,10 @@
   font-size: 2.3vw;
   color: rgb(207, 207, 207);
   font-weight: bold;
-  padding-left:24vw;
+  padding-left: 24vw;
   top: 7vw;
   position: relative;
-  
+
 }
 
 .weatherSide h2 {
@@ -190,7 +190,7 @@
 
 .buttonU.light {
   opacity: 1;
-  border:none;
+  border: none;
   color: #E1795F;
   background: #e0e0e0;
   box-shadow: 20px 20px 60px #bebebe,
@@ -243,7 +243,7 @@
   color: #007185;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
   box-shadow: 20px 20px 60px #aaaaaa,
-  -20px -20px 60px #ffffff;
+    -20px -20px 60px #ffffff;
   /* background-color:; */
 }
 
@@ -297,4 +297,9 @@
 
 .search.light .search-title {
   color: #3b3b3b;
+}
+
+.theme-button.light {
+  box-shadow: 20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
 }
